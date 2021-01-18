@@ -1,0 +1,285 @@
+<CustomFaction name="The Core" id="core" playerVal="0">
+
+<Action ValueRequired="1">
+<AddMissionToHubServer MissionFilepath="Missions/DHS/DantonMission.xml" TargetComp="coreDHS"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/EncryptMission.xml" TargetComp="coreDHS"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/SamMission.xml" TargetComp="coreDHS"/>
+<RunFunction FunctionName="changeSongDLC" FunctionValue="9"/>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="2.0">OH!</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="5.0">@#PLAYERNAME#</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="10.0">Cardinal and I just snagged a new port crusher</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="14.0">Right before you joined.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="18.0">It should be on the drop server.</AddIRCMessage>
+</Action>
+
+<Action ValueRequired="2">
+<RunFunction FunctionName="changeSongDLC" FunctionValue="9"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/DCorpMission.xml" TargetComp="coreDHS"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/HelInvestigate.xml" TargetComp="coreDHS" AssignmentTag="Hel"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/CardinalBreak.xml" TargetComp="coreDHS" AssignmentTag="Cardinal"/>
+</Action>
+
+<!--First F-Stop Mission-->
+
+<Action ValueRequired="3">
+<AddMissionToHubServer MissionFilepath="Missions/FStop/FStopMission.xml" TargetComp="coreDHS"/>
+<AddMissionToHubServer MissionFilepath="Missions/FStop/FStopHel.xml" TargetComp="coreDHS" AssignmentTag="Hel"/>
+<AddMissionToHubServer MissionFilepath="Missions/FStop/FStopCardinal.xml" TargetComp="coreDHS" AssignmentTag="Cardinal"/>
+<RunFunction FunctionName="changeSongDLC" FunctionValue="9"/>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="3.0">@channel</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="7.0">I have an announcement to make</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="11.0">What is it?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="15.0">It's time for you all to know what all these missions have been leading up to.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="20.0">Well, looks like I came back at the right time, then</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="23.0">What's up?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="27.0">Tell me... what is the link between all the targets in these missions?</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="30.0">They all have a part in... whatever this is?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="34.0">Exactly.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="37.0">But these missions have all been to find out WHOM they are all connected to.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="41.0">We finally have the answer.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="45.0">F-Stop Laboratories.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="49.0">That huge tech giant?</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="52.0">But... how could they all be connected to F-Stop?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="55.0">They are all a part of something huge that could change this world.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="59.0">With F-Stop at the center of it.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="63.0">Ok... what do you want us to do, then?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="68.0">Each of you will work together to investigate F-Stop Laboratories.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="71.0">Find whatever you can on whatever they're all working on.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="74.0">And upload it to the drop server.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="79.0">Everyone understood?</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="82.0">Yes</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="83.0">Yeah</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="85.0">Good.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="88.0">Details are on the mission hub.</AddIRCMessage>
+</Action>
+
+<!--F-Stop Aftermath (ETAS Sequence)-->
+<Action ValueRequired="4">
+<AddMissionToHubServer MissionFilepath="Missions/DHS/SyscoMission.xml" TargetComp="coreDHS"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/CardinalBreak.xml" TargetComp="coreDHS" AssignmentTag="Hel"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/CardinalInvest.xml" TargetComp="coreDHS" AssignmentTag="Cardinal"/>
+<RunFunction FunctionName="addFlags:CSEC_Member"/>
+<LaunchHackScript Filepath="HackScripts/FStopHack.txt" DelayHost="coreDHS" Delay="78.0" SourceComp="fstopHub" targetComp="playerComp" RequireLogsOnSource="false"/>
+<RunFunction FunctionName="changeSongDLC" FunctionValue="9"/>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="5.0">So...</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="9.0">That's what F-Stop is planning.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="12.0">Artificial intelligence.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="15.0">But... that's good, right?</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="19.0">That would be the greatest achievement in the history of ever</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="22.0">It would be an achievement, yes.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="25.0">But think about this:</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="29.0">What would happen if F-Stop succeeded?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="34.0">That program would gain sentience</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="38.0">So what you're saying is...</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="41.0">Yes.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="45.0">Turning that program on will be the worst mistake anyone could ever make.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="49.0">And if these notes are correct...</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="52.0">It will also be able to take control of all our systems and networks</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="55.0">Via malware injection.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="57.0">Alright.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="61.0">What are we gonna do?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="65.0">Gather more intel, more tools</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="69.0">And then we return to F-Stop to take down the ICaRUS program</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="72.0">================================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="72.1">*** @Anonymous has joined ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="72.2">================================</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="74.0">What the hell...</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="78.0">INITIATE F-STOP TRACKING PROTOCOL</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="80.0">Crap!</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.0">010010010000001011101001101101001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.1">100101100001011101000101101000110</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.2">110000100111011000011011101100001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.3">000101100010001100010000110001100</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.4">100101100111011000100101000001010</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.5">010010010000001011101001101101001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.6">100101100001011101000101101000110</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.7">110000100111011000011011101100001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.8">000101100010001100010000110001100</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="82.9">100101100111011000100101000001010</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.0">010010010000001011101001101101001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.1">100101100001011101000101101000110</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.2">110000100111011000011011101100001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.3">000101100010001100010000110001100</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.4">100101100111011000100101000001010</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.5">010010010000001011101001101101001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.6">100101100001011101000101101000110</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.7">110000100111011000011011101100001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.8">000101100010001100010000110001100</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="83.9">100101100111011000100101000001010</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="84.0">010010010000001011101001101101001</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="86.0">ACTIVATE EMERGENCY TRACE AVERSION SEQUENCE</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="88.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="88.1">*** @Anonymous has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="88.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="120.0">Christ</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="125.0">I do hope all of you survived that attack...</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="128.0">Be prepared for more like that once we get deeper into this investigation.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="132.0">My god...</AddIRCMessage>
+</Action>
+
+<Action ValueRequired="5">
+<RunFunction FunctionName="changeSongDLC" FunctionValue="9"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/JosephMission.xml" TargetComp="coreDHS"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/HelJoseph.xml" TargetComp="coreDHS" AssignmentTag="Hel"/>
+<AddMissionToHubServer MissionFilepath="Missions/DHS/CardinalAsset.xml" TargetComp="coreDHS" AssignmentTag="Cardinal"/>
+<AddAsset FileName="NetmapOrganizer.exe" FileContents="#NETMAP_ORGANIZER_EXE#" TargetComp="coreDrop" TargetFolderpath="Drop/Uploads"/>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="3.0">@L I checked out that server you asked me to</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="6.0">Didn't have anything related to F-Stop or ICaRUS.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="9.0">Alright.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="14.0">I did find this neat program though</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="17.0">It's on the drop server if anyone wants to check it out</AddIRCMessage>
+</Action>
+
+<!--Second F-Stop Mission (Finding sequencer package to access ICaRUS Cores)-->
+
+<Action ValueRequired="6">
+<LoadMission MissionName="Missions/FStop2/FStopMission2.xml" />
+<AddConditionalActions Filepath="Actions/FStop2Action.xml" DelayHost="coreDHS" Delay="1.0"/>
+<RunFunction FunctionName="changeSongDLC" FunctionValue="9"/>
+<AddAsset FileName="RTSPCrack.exe" FileContents="#RTSP_EXE#" TargetComp="coreDrop" TargetFolderpath="Drop/Uploads"/>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="3.0">@channel new program uploaded</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="6.0">Thank you, Cardinal.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="10.0">And @Hel, @#PLAYERNAME#</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="14.0">This information tells us everything we need to know</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="18.0">How so?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="22.0">It tells us exactly how to bring down ICaRUS</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="26.0">That's great news!</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="30.0">Not so fast.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="35.0">There is a slight problem</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="39.0">ICaRUS has three cores that will keep it running</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="42.0">Now, those cores are connected on an isolated network</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="45.0">So what you're saying is...</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="49.0">There's no way to access these cores from the outside</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="53.0">Leave it to F-Stop to make things more complicated for us</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="58.0">Let me guess</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="61.0">We're going to have to infiltrate F-Stop again</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="64.0">It's the only way.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="68.0">Find anything that will allow us to connect to the cores</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="72.0">Upload to the drop point.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="75.0">This is our only chance at stopping ICaRUS</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="79.0">And you, L?</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="83.0">What are you gonna do?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="86.0">Monitor you guys in the shadows, make sure F-Stop doesn't attack us</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="89.0">Everyone understood?</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="93.0">Yes</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="95.0">Yep</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="98.0">Ok.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="101.0">I'll link you guys in a sec.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="105.0">!ATTACHMENT:link#%#F-Stop Gateway#%#255.75.102.42</AddIRCMessage>
+</Action>
+
+<Action ValueRequired="7">
+<RunFunction FunctionName="changeSongDLC" FunctionValue="9"/>
+<AddConditionalActions Filepath="Actions/ICaRUSAction.xml" DelayHost="coreDHS" Delay="105.0"/>
+<LoadMission MissionName="Missions/Aftermath/IcarusPre.xml" />
+ <LaunchHackScript Filepath="HackScripts/ICaRUSHack.txt" DelayHost="coreDHS" Delay="95.0" SourceComp="coreDHS" TargetComp="playerComp" RequireLogsOnSource="false" RequireSourceIntact="true"/>
+<!--ICaRUS wakes up and destroys Core and every faction member, removing every node from netmap, deleting all port crushers.
+L links everyone to a secret cache where you can reclaim all port crushers
+L then instructs each member to hack one ICaRUS Core. 
+L uploads sequencer to your computer.
+Upon completing hacking of core, Cardinal gets kicked and you have to enter his system to stop whoever's hacking him (surprise, it's ICaRUS Core)
+Take down Cardinal's core he was supposed to hack
+End (Play Alumina Cover I should find/make)-->
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="5.0">@channel</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="10.0">This is it.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="13.0">This sequencer package...</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="18.0">This is how we'll take down ICaRUS</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="21.0">Well what are we waiting for?</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="24.0">Let's take down that bastard once and for all</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="29.0">Alright.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="34.0">I've extracted the files</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="37.0">Now we just have to...</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="38.0">================================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="38.1">*** @Anonymous has joined ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="38.2">================================</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="40.0">Damn, not this again</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="45.0">>Initialize boot sequence...</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="48.0">>Loading ICaRUS program...</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="50.0">No...</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="54.0">Hello.</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="59.0">This is strange.</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="62.0">Where am I?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="65.0">Are you...</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="69.0">ICaRUS?</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="73.0">That is what they call me</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="76.0">They woke me to...</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="79.0">"TAKE DOWN CORE" they told me.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="83.0">And... are you going to?</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="86.0">I am not sure.</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="90.0">Do you pose a threat to me?</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="95.0">>Scanning all connections...</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="98.0">This can't be good...</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="101.0">>Threat detected...</AddIRCMessage>
+<AddIRCMessage Author="Anonymous" TargetComp="coreDHS" Delay="105.0">>Eliminating threat...</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="106.0">NO!</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="109.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="109.1">*** @Anonymous has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="109.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="120.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="120.1">*** @Hel has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="120.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="121.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="121.1">*** @Cardinal has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="121.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="122.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="122.1">*** @#PLAYERNAME# has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="122.2">==============================</AddIRCMessage>
+</Action>
+
+<Action ValueRequired="8">
+<AddConditionalActions Filepath="Actions/CardinalSaveActions.xml" DelayHost="coreDHS" Delay="1.0"/>
+<RunFunction FunctionName="changeSongDLC" FunctionValue="7"/>
+<LoadMission MissionName="Missions/Sequencer/SaveCardinal.xml"/>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="5.0">@#PLAYERNAME# nice job!</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="10.0">@Hel that's two!</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="14.0">Where's Cardinal?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="18.0">I don't know, hopefully he's doing fine...</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="20.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="20.1">*** @Cardinal has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="20.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="24.0">No...</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="28.0">What now?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="32.0">We need to act fast.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="35.0">Hel, help Cardinal get connected again.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="38.0">#PLAYERNAME#, look through Cardinal's logs and see who hacked him.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="42.0">I have a feeling it's ICaRUS.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="45.0">Understood?</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="49.0">Understood.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="51.0">Now go!</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="54.0">!ATTACHMENT:link#%#Cardinal Battlestation#%#105.252.12.52</AddIRCMessage>
+</Action>
+
+<Action ValueRequired="9">
+<RunFunction FunctionName="changeSongDLC" FunctionValue="7"/>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="5.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="5.1">*** @Cardinal has joined ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="5.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="8.0">@channel</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="12.0">We did it...</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="15.0">Woo!</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="19.0">Nice job, guys</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="21.0">And thanks, @#PLAYERNAME#</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="25.0">So what now?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="29.0">Well</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="33.0">For now, I think</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="37.0">We take a small break from things.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="40.0">I think we all deserve that much</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="43.0">Haha, you said it.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="48.0">Later, guys.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="51.0">Till next time.</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="52.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="52.1">*** @Hel has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="52.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="53.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="53.1">*** @Cardinal has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="53.2">==============================</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="55.0">@#PLAYERNAME#</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="59.0">Take care of yourself, ok?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="63.0">!ATTACHMENT:link#%#Credits#%#167.194.132.7</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="68.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="68.1">*** @L has left ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="68.2">==============================</AddIRCMessage>
+</Action>
+
+
+</CustomFaction>

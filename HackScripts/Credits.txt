@@ -1,0 +1,123 @@
+config playerComp coreDHS 0.1 $#%#$
+connect $#%#$
+delay 5 $#%#$
+writel = $#%#$
+write = $#%#$
+write = $#%#$
+write CORE $#%#$
+write = $#%#$
+write = $#%#$
+write = $#%#$
+delay 5 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel Created by $#%#$
+delay 1 $#%#$
+write Kwiper $#%#$
+delay 5 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel Story by $#%#$
+delay 1 $#%#$
+write Kwiper $#%#$
+delay 5 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel Music $#%#$
+delay 2 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel Waterflame $#%#$
+delay 1 $#%#$
+writel Thunderzone V2 $#%#$
+writel Relentless $#%#$
+writel https://www.youtube.com/waterflame89 $#%#$
+delay 2 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel HOME $#%#$
+delay 1 $#%#$
+writel Captain Forever $#%#$
+writel Dusk $#%#$
+writel Hold $#%#$
+writel If Im Wrong $#%#$
+writel https://soundcloud.com/home-2001 $#%#$
+writel https://www.facebook.com/homemusicofficial $#%#$
+delay 2 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel Emil Rottmayer $#%#$
+delay 1 $#%#$
+writel Descend $#%#$
+writel https://soundcloud.com/emil-rottmayer $#%#$
+writel https://twitter.com/imamouseville?lang=en $#%#$
+delay 2 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel DesoloZ $#%#$
+delay 1 $#%#$
+writel Super Paper Mario - The Ultimate Show (Remix) $#%#$
+writel https://www.youtube.com/watch?v=XkngtuMD4_I $#%#$
+writel http://www.newgrounds.com/audio/listen/505598 $#%#$
+delay 2 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel Hacknet OST $#%#$
+delay 2 $#%#$
+writel Cinematrix - Revolve (R Mix) $#%#$
+writel Remi Gallego (The Algorithm) - Malware Injection $#%#$
+writel Remi Gallego (The Algorithm) - Payload (AKA Userspacelike) $#%#$
+writel Remi Gallego (The Algorithm) - Panic Track $#%#$
+writel Tonspender - Broken Boy $#%#$
+delay 2 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel x-servers $#%#$
+delay 2 $#%#$
+writel Helix - http://palandros.deviantart.com/art/Double-Helix-81840196
+writel FStop - Kwiper
+delay 2 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel Special Thanks $#%#$
+delay 2 $#%#$
+writel Matt Trobbiani - $#%#$
+delay 2 $#%#$
+write Creator of Hacknet $#%#$
+delay 5 $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+writel_silent $#%#$
+delay 2 $#%#$
+writel #HackerJAM $#%#$
+delay 5 $#%#$
+writel THANKS FOR PLAYING $#%#$
+delay 2 $#%#$
+disconnect $#%#$

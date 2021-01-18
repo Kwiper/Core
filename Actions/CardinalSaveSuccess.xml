@@ -1,0 +1,9 @@
+<ConditionalActions>
+
+<Instantly>
+<CancelScreenBleedEffect DelayHost="coreDHS" Delay="0.0" />
+<RunFunction FunctionName="addRankSilent" FunctionValue="1"/>
+<HideNode DelayHost="coreDHS" Delay="0.0" TargetComp="icarusCore3" />
+</Instantly>
+
+</ConditionalActions>

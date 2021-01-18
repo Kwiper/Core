@@ -1,0 +1,34 @@
+<ConditionalActions>
+
+<OnAdminGained target="fstopCEO">
+<CrashComputer TargetComp="fstopWhitelist" CrashSource="coreDHS" DelayHost="coreDHS" Delay="60.0"/>
+<DeleteFile TargetComp="fstopWhitelist" FilePath="Whitelist" FileName="authenticator.dll" DelayHost="coreDHS" Delay="75.0"/>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="20.0">@channel anyone else at this unbreakable whitelist?</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="24.0">Oh yeah, I can see what you mean by unbreakable.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="28.0">I've got an idea, though.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="31.0">Oh?</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="35.0">Find some way to crash it, I'll handle it</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="38.0">Mk...</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="42.0">I'm ready</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="45.0">Ok</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="48.0">Give me a sec</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="53.0">Ready.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="55.0">On 3...</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="57.0">2...</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="59.0">Done.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="63.0">Hey! I didn't count to 1 yet!</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="67.0">Shut up and go already!</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="75.0">Aaannnd....</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="78.0">Done.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="80.0">Nice.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="84.0">Aren't you gonna say:</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="87.0">"Oh, Cardinal, how did you do that?"</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="90.0">"Will you teach me?"</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="94.0">"You're so cool, Cardinal, will you go out with me?"</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="98.0">No, no.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="101.0">And definitely no.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="105.0">Eh, it was worth a shot.</AddIRCMessage>
+
+</OnAdminGained>
+
+</ConditionalActions>

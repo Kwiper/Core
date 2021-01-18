@@ -1,0 +1,8 @@
+<ConditionalActions>
+
+<Instantly>
+<DeleteFile TargetComp="playerComp" FilePath="sys" FileName="x-server.sys" DelayHost="coreDHS" Delay="0.0"/>
+<CrashComputer TargetComp="playerComp" CrashSource="icarusCore" DelayHost="coreDHS" Delay="0.0" />
+<LaunchHackScript Filepath="HackScripts/Credits.txt" DelayHost="coreDHS" Delay="40.0" SourceComp="coreDHS" targetComp="playerComp" RequireLogsOnSource="false"/>
+</Instantly>
+</ConditionalActions>

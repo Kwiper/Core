@@ -1,0 +1,40 @@
+<ConditionalActions>
+
+<OnConnect target="coreDHS" needsMissionComplete="false">
+<RunFunction FunctionName="changeSongDLC" FunctionValue="7"/>
+<ChangeAlertIcon Target="coreDHS" Type="irchub" DelayHost="coreDHS" Delay="0.1"/>
+<AddAsset FileName="ICaRUSSequencer.exe" FileContents="#EXT_SEQUENCER_EXE#" TargetComp="playerComp" TargetFolderpath="bin" />
+
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="-16.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="-15.0">*** @Hel has joined ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="-14.0">==============================</AddIRCMessage>
+
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="-13.0">==============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="-12.0">*** @Cardinal has joined ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="-11.0">==============================</AddIRCMessage>
+
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="-10.0">And we're back</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="-9.0">Just gotta wait for #PLAYERNAME#</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="-8.0">We're very close.</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="0.1">=============================</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="0.2">*** @#PLAYERNAME# has joined ***</AddIRCMessage>
+<AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="0.3">=============================</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="4.0">There we go.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="8.0">Alright.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="12.0">This is it, guys.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="15.0">We're taking down ICaRUS.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="19.0">Here's the plan:</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="24.0">I've extracted the package #PLAYERNAME# uploaded</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="28.0">It contained everything we needed to take down ICaRUS.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="32.0">I've uploaded one sequencer each to your nodes.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="35.0">Activating the sequencer will connect you to one of the ICaRUS cores.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="39.0">Find some way to disable the core.</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="43.0">Is that it?</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="49.0">Yeah.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="52.0">Prepare for ICaRUS to fight back.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="55.0">This is our only chance.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="59.0">We won't fail you, L</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="62.0">Let's do this</AddIRCMessage>
+</OnConnect>
+
+</ConditionalActions>

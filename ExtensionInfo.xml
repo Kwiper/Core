@@ -1,0 +1,63 @@
+<HacknetExtension>
+
+	<Name>Core</Name>
+	<AllowSaves>true</AllowSaves>
+
+	<StartingVisibleNodes>coreDHS,coreDrop</StartingVisibleNodes>
+  
+  <StartingMission>Missions/SetFaction.xml</StartingMission>
+
+  <StartingActions>Actions/StartingActions.xml</StartingActions>
+
+  
+  <Description>Wake up, agent. It's time to get back to work.</Description>
+  
+  
+  <Faction>Factions/Core.xml</Faction>
+  
+  <StartsWithTutorial>False</StartsWithTutorial>
+  
+  <HasIntroStartup>True</HasIntroStartup>
+  
+  <StartingTheme>HacknetMint</StartingTheme>
+
+  <IntroStartupSong>Revolve</IntroStartupSong>
+
+  <SequencerTargetID>icarusCore</SequencerTargetID>
+  <SequencerSpinUpTime>14.8</SequencerSpinUpTime>
+  <ActionsToRunOnSequencerStart>Actions/SequencerActions.xml</ActionsToRunOnSequencerStart>
+
+
+  <WorkshopDescription>Wake up, agent. It's time to get back to work.
+
+You have been ordered to return to an old hacker group. But why? What could be so important to call you back to work?
+
+Featuring:
+-A new storyline with new characters
+-New missions to complete
+-New music
+-Around 1 1/2 hours of gameplay
+
+This extension requires you to have Labyrinths installed in order to play.
+
+Created by Kwiper
+
+#HackerJAM
+
+
+Huge thanks to bobK for making a guide for this extension! http://steamcommunity.com/sharedfiles/filedetails/?id=969873866
+</WorkshopDescription>
+
+  <WorkshopLanguage>English</WorkshopLanguage>
+
+  <WorkshopVisibility>0</WorkshopVisibility>
+
+  <WorkshopTags>Extension</WorkshopTags>
+
+
+  <WorkshopPreviewImagePath>Core_Workshop.png</WorkshopPreviewImagePath>
+
+
+  <WorkshopPublishID>941562980</WorkshopPublishID>
+
+</HacknetExtension>

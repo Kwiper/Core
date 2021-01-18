@@ -1,0 +1,11 @@
+<ConditionalActions>
+
+<Instantly>
+<KillExe DelayHost="coreDHS" Delay="0.0" ExeName="*" />
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="ICaRUSSequencer.exe" DelayHost="coreDHS" Delay="0.0"/>
+<CancelScreenBleedEffect DelayHost="coreDHS" Delay="0.0" />
+<RunFunction FunctionName="addRankSilent" FunctionValue="1"/>
+<HideNode DelayHost="coreDHS" Delay="0.0" TargetComp="icarusCore" />
+</Instantly>
+
+</ConditionalActions>

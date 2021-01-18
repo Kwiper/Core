@@ -1,0 +1,22 @@
+<ConditionalActions>
+
+<Instantly>
+<StartScreenBleedEffect AlertTitle="Eliminating Threats" CompleteAction="Actions/ICaRUSHackActions.xml" TotalDurationSeconds="5.0" DelayHost="coreDHS" Delay="0.0"/>
+<CancelScreenBleedEffect DelayHost="coreDHS" Delay="5.1" />
+<CrashComputer TargetComp="playerComp" CrashSource="coreDHS" DelayHost="coreDHS" Delay="5.1" />
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="SSHCrack.exe" DelayHost="coreDHS" Delay="6.0"/>
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="FTPBounce.exe" DelayHost="coreDHS" Delay="6.0"/>
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="SMTPOverflow.exe" DelayHost="coreDHS" Delay="6.0"/>
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="WebServerWorm.exe" DelayHost="coreDHS" Delay="6.0"/>
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="SSLTrojan.exe" DelayHost="coreDHS" Delay="6.0"/>
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="TorrentStreamInjector.exe" DelayHost="coreDHS" Delay="6.0"/>
+<DeleteFile TargetComp="playerComp" FilePath="bin" FileName="RTSPCrack.exe" DelayHost="coreDHS" Delay="6.0"/>
+<SwitchToTheme ThemePathOrName="HacknetPurple" FlickerInDuration="0.0" DelayHost="coreDHS" Delay="6.0" />
+<HideAllNodes DelayHost="coreDHS" Delay="6.0"/>
+<ChangeIP DelayHost="coreDHS" Delay="6.0" TargetComp="coreDHS" NewIP="152.20.102.53" />
+<ChangeAlertIcon Target="jmail" Type="mail" DelayHost="coreDHS" Delay="6.0"/>
+<ChangeNetmapSortMethod DelayHost="coreDHS" Delay="6.0" Method="scatter" />
+<SaveGame DelayHost="coreDHS" Delay="6.0"/>
+</Instantly>
+
+</ConditionalActions>

@@ -1,0 +1,8 @@
+<ConditionalActions>
+
+<Instantly>
+<RunFunction FunctionName="playCustomSong:Music/Waterflame_-_Thunderzone_V2.ogg"/>
+<AddConditionalActions Filepath="Actions/FStopHelpAction.xml" DelayHost="coreDHS" Delay="5.5"/>
+</Instantly>
+
+</ConditionalActions>

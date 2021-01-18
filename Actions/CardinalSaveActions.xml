@@ -1,0 +1,10 @@
+<ConditionalActions>
+
+<OnConnect target="icarusCore3" needsMissionComplete="false">
+<StartScreenBleedEffect AlertTitle="SAVE CARDINAL" CompleteAction="Actions/FailActions.xml" TotalDurationSeconds="86.0" DelayHost="coreDHS" Delay="0.0">Hack into core 
+Delete /Core folder
+Disconnect</StartScreenBleedEffect>
+<RunFunction FunctionName="playCustomSong:Music/DesoloZ_-_The_Ultimate_Show_Remix_Edit.ogg"/>
+</OnConnect>
+
+</ConditionalActions>

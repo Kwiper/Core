@@ -1,0 +1,9 @@
+<ConditionalActions>
+
+<OnConnect target="josephIRC" needsMissionComplete="false">
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="1.0">@#PLAYERNAME#</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="5.0">Found something you might need</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="8.0">!ATTACHMENT:link#%#Joseph W. Laptop#%#124.25.249.1</AddIRCMessage>
+</OnConnect>
+
+</ConditionalActions>

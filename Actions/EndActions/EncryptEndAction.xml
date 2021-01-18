@@ -1,0 +1,9 @@
+<ConditionalActions>
+
+<OnConnect target="coreDHS" needsMissionComplete="false">
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="3.0">Mission reports?</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="12.0">Yeah, admin pass has been posted for Danton.</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="16.0">Virus is uploaded onto Sam's computers.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="20.0">Good.</AddIRCMessage>
+</OnConnect>
+</ConditionalActions>

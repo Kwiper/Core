@@ -1,0 +1,37 @@
+<ConditionalActions>
+  
+  <OnConnect target="coreDHS" needsMissionComplete="false">
+    <RunFunction FunctionName="addFlags:CSEC"/>
+    <RunFunction FunctionName="setHubServer:coreDHS"/>
+    <RunFunction FunctionName="setAssetServer:coreDrop"/>
+    <AddAsset FileName="WebServerWorm.exe" FileContents="#WEB_CRACK#" TargetComp="coreDrop" TargetFolderpath="Drop/Uploads" />
+    <AddMissionToHubServer MissionFilepath="Missions/DHS/CastleMission.xml" TargetComp="coreDHS"/>
+    <AddMissionToHubServer MissionFilepath="Missions/DHS/TOEMission.xml" TargetComp="coreDHS" AssignmentTag="Cardinal"/>
+    <AddMissionToHubServer MissionFilepath="Missions/DHS/HelProgramMission.xml" TargetComp="coreDHS" AssignmentTag="Hel"/>
+    <ChangeAlertIcon Target="coreDHS" Type="irchub" DelayHost="coreDHS" Delay="0.1"/>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="-10">Phew, that was a close one</AddIRCMessage>
+    <AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="-20">Hey, I told you we'd get it</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="-30">Haha, shut up</AddIRCMessage>
+    <AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="5.0">================================</AddIRCMessage>
+    <AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="5.0">*** @#PLAYERNAME# HAS JOINED ***</AddIRCMessage>
+    <AddIRCMessage Author="CORE" TargetComp="coreDHS" Delay="5.0">================================</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="8.0">Oh my god!</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="11.0">You're back!</AddIRCMessage>
+    <AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="15.0">Wait, who is this?</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="19.0">Oh, right, you two haven't met</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="23.0">#PLAYERNAME#, this is Cardinal</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="27.0">He joined this little group sometime after you left...</AddIRCMessage>
+    <AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="30.0">Sup.</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="35.0">And Cardinal, this is #PLAYERNAME#</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="39.0">#PLAYERNAME# was once part of us when...</AddIRCMessage>
+    <AddIRCMessage Author="L" TargetComp="coreDHS" Delay="42.0">Ah, #PLAYERNAME#, I see you got my message.</AddIRCMessage>
+    <AddIRCMessage Author="L" TargetComp="coreDHS" Delay="46.0">Good.</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="48.0">Hang on</AddIRCMessage>
+    <AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="52.0">You asked #PLAYERNAME# to return?</AddIRCMessage>
+    <AddIRCMessage Author="L" TargetComp="coreDHS" Delay="55.0">More like... ordered.</AddIRCMessage>
+    <AddIRCMessage Author="L" TargetComp="coreDHS" Delay="60.0">Alright, back to work.</AddIRCMessage>
+    <AddIRCMessage Author="L" TargetComp="coreDHS" Delay="65.0">That includes you, #PLAYERNAME#</AddIRCMessage>
+
+  </OnConnect>
+
+</ConditionalActions>

@@ -1,0 +1,9 @@
+<ConditionalActions>
+
+<Instantly>
+
+<AddAsset FileName="rootwyrm.jar" FileContents="#BINARY#" TargetComp="coreDrop" TargetFolderpath="home" />
+<RunFunction FunctionName="changeSong" FunctionValue="3"/>
+</Instantly>
+
+</ConditionalActions>

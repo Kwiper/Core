@@ -1,0 +1,7 @@
+<ConditionalActions>
+
+<OnConnect target="asset1" needsMissionComplete="false">
+<RunFunction FunctionName="changeSong" FunctionValue="1"/>
+</OnConnect>
+
+</ConditionalActions>

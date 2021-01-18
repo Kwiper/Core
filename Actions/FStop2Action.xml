@@ -1,0 +1,8 @@
+<ConditionalActions>
+
+<OnConnect target="fstopGateway" needsMissionComplete="false">
+<RunFunction FunctionName="playCustomSong:Music/Waterflame_-_Relentless.ogg"/>
+<AddConditionalActions Filepath="Actions/FStop2ActionNext.xml" DelayHost="coreDHS" Delay="1.0"/>
+</OnConnect>
+
+</ConditionalActions>

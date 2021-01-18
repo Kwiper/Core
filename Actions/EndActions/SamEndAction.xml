@@ -1,0 +1,12 @@
+<ConditionalActions>
+
+<OnConnect target="coreDHS" needsMissionComplete="false">
+<AddAsset FileName="Decypher.exe" FileContents="#DECYPHER_PROGRAM#" TargetComp="coreDrop" TargetFolderpath="Drop/Uploads" />
+<AddAsset FileName="DECHead.exe" FileContents="#DECHEAD_PROGRAM#" TargetComp="coreDrop" TargetFolderpath="Drop/Uploads" />
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="3.0">@channel check the drop server, I've uploaded a couple programs from my mission</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="7.0">Wonderful.</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="12.0">@Cardinal, any news on your mission?</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="16.0">Yep, the admin pass to Danton has been posted</AddIRCMessage>
+<AddIRCMessage Author="L" TargetComp="coreDHS" Delay="20.0">Good.</AddIRCMessage>
+</OnConnect>
+</ConditionalActions>

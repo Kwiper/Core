@@ -1,0 +1,7 @@
+<ConditionalActions>
+
+<OnAdminGained target="ceoPhone">
+<RunFunction FunctionName="playCustomSong:Music/Phone.ogg"/>
+</OnAdminGained>
+
+</ConditionalActions>

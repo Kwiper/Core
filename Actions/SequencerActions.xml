@@ -1,0 +1,14 @@
+<ConditionalActions>
+
+<!--Sequencer Actions-->
+
+<Instantly>
+<LoadMission MissionName="Missions/Sequencer/SequencerMission.xml" />
+<RunFunction FunctionName="playCustomSong:Music/DesoloZ_-_The_Ultimate_Show_Remix.ogg"/>
+<SwitchToTheme ThemePathOrName="HacknetWhite" FlickerInDuration="2.0" DelayHost="coreDHS" Delay="14.8" />
+<StartScreenBleedEffect AlertTitle="DESTROY ICaRUS" CompleteAction="Actions/FailActions.xml" TotalDurationSeconds="86.7" DelayHost="coreDHS" Delay="14.8">Hack into ICaRUS
+Destroy /Core folder
+Disconnect</StartScreenBleedEffect>
+</Instantly>
+
+</ConditionalActions>

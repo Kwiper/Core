@@ -1,0 +1,11 @@
+config playerComp fstopHub 0.1 $#%#$
+connect $#%#$
+stopMusic $#%#$
+hideRam $#%#$
+hideNetMap $#%#$
+delay 10 $#%#$
+instanttrace $#%#$
+showNetMap $#%#$
+showRam $#%#$
+startMusic $#%#$
+disconnect $#%#$

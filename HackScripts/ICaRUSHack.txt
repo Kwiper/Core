@@ -1,0 +1,4 @@
+config playerComp coreDHS 0.1 $#%#$
+connect $#%#$
+stopMusic $#%#$
+disconnect $#%#$

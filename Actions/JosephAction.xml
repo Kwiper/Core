@@ -1,0 +1,11 @@
+<ConditionalActions>
+
+<Instantly>
+<RunFunction FunctionName="playCustomSong:Music/HOME_-_Hold.ogg"/>
+<AddConditionalActions Filepath="Actions/JosephActionNext.xml"/>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="3.0">@#PLAYERNAME# looks like we're together on this one!</AddIRCMessage>
+<AddIRCMessage Author="Cardinal" TargetComp="coreDHS" Delay="7.0">Good luck guys, I'm going to look for more assets we can use</AddIRCMessage>
+<AddIRCMessage Author="Hel" TargetComp="coreDHS" Delay="11.0">I'll ping you if I find anything you may find interesting, @#PLAYERNAME#</AddIRCMessage>
+</Instantly>
+
+</ConditionalActions>
