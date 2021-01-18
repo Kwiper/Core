@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="coreDrop"
+          name="The Core Drop Server"
+          security="1"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="C0r3Dr0p-TR8R" />
+
+<ports>21, 22, 25, 80</ports>
+
+<portsForCrack val="2" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<dlink target="coreDHS" />
+<positionNear target="coreDHS" position="2" total="3" extraDistance="-0.2"/>
+
+<file path="bin" name="ThemeChanger.exe">#THEMECHANGER_EXE#</file>
+
+<uploadServerDaemon name="Core Dropbox" folder="Drop"
+                    needsAuth="false" color="122, 127, 196"/>
+
+</Computer>

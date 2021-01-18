@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="halleyComp"
+          name="Halley Magnussen Home"
+          ip="255.12.102.5"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="4" >
+
+<adminPass pass="Vx83JSa" />
+
+<ports>21, 22, 25, 80</ports>
+<portsForCrack val="3" />
+<firewall level="6"/>
+
+<file path="home" name="email_extract.docx">On 25 April, 201X, John Stalvern wrote,
+Hello, this is John. I'm the new IT guy here at Danton. I'm just writing to you because I haven't gotten admin access to the company server yet.
+Thanks.
+=============================
+On 25 April, 201X, Halley Magnussen wrote,
+Hey, John.
+Admin password is Danton-Enterprises-4472
+It's good to have you with us!
+-Halley</file>
+
+<file path="sys" name="Teal-Theme.sys">#TEAL_THEME#</file>
+
+</Computer>

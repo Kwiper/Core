@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="josephMatt"
+          name="Matthew M. Home"
+          ip="43.102.50.35"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="4" >
+
+<adminPass pass="Scorpius"/>
+<ports>21, 22, 25, 80, 6881, 443</ports>
+<proxy time="1"/>
+<portsForCrack val="4"/>
+<firewall level="4"/>
+<trace time="80"/>
+
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="bin" name="Prj_ICaRUS.txt">File password is the father of Icarus in all caps.</file>
+
+</Computer>

@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="encryptHub"
+          name="Encryption Inc. Hub Server"
+          security="4" 
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="V67Cya32"/>
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1" />
+<portsForCrack val="4" />
+<trace time="80" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="Vault.txt">Vault IP: 28.102.42.54</file>
+<file path="Staff" name="Staff.txt">T. Nanderson: 123.542.24.1
+J. Schnee: 382.12.52.2
+R.J. Ferguson: #RANDOM_IP#</file>
+
+
+</Computer>
+

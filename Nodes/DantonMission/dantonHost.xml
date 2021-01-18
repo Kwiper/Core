@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="dantonHost"
+          name="Danton Enterprises Web Server Host"
+          ip="298.132.41.40"
+          security="4"
+          allowsDefaultBootModule="false"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="Danton-Vx9GS41" />
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1" />
+<portsForCrack val="4" />
+<trace time="100" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<dlink target="dantonComp"/>
+
+<file path="home" name="server_admin.txt">For any inquiries regarding Danton Enterprises servers and IT, contact Halley Magnussen, Head of IT at Danton Enterprises (255.12.102.5)</file>
+
+</Computer>

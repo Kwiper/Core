@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="asset1"
+          name="Asset Gauntlet 1"
+          security="1"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Gauntlet1" />
+<ports>21, 22, 25</ports>
+
+<portsForCrack val="0"/>
+
+<dlink target="asset2"/>
+
+<file path="bin" name="SSHCrack.exe">#SSH_CRACK#</file>
+<file path="bin" name="SMTPOverflow.exe">#SMTP_CRACK#</file>
+<file path="bin" name="FTPSprint.exe">#FTP_FAST_EXE#</file>
+
+</Computer>

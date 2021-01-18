@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="joinFaction">
+  <goals>
+
+  </goals>
+
+  <missionStart suppress="true">setFaction:core</missionStart>
+  <nextMission IsSilent="true">NONE</nextMission>
+
+  <email>
+    <sender>Anon</sender>
+    <subject>Silent</subject>
+    <body>This should be silent.
+</body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

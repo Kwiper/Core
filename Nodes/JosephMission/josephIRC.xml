@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="josephIRC"
+          name="F-Stop Private IRC"
+          ip="201.412.5.24"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="FStop22914"/>
+
+<account username="JosephW" password="TR8ss12A" type="ALL"/>
+
+<ports>21, 22, 25, 80, 6881</ports>
+<portsForCrack val="6"/>
+
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<IRCDaemon themeColor="150,20,50" name="F-Stop Private IRC Channel" needsLogin="true">
+<user name="JosephW" color="150,10,150"/>
+<user name="MatthewM" color="170,10,20"/>
+<user name="JohnS" color="10,150,150"/>
+
+<post user="JosephW">I keep telling you, there's no way I'm coming back to F-Stop.</post>
+<post user="JohnS">Come on, we need you</post>
+<post user="MatthewM">ICaRUS is this close to being complete</post>
+<post user="JosephW">No. I'm done.</post>
+<post user="JohnS">At least take a look at these design plans</post>
+<post user="JohnS">Matthew, the link?</post>
+<post user="MatthewM">111.53.41.2</post>
+<post user="JosephW">...</post>
+<post user="JosephW">This is...</post>
+<post user="JohnS">The future, Joseph.</post>
+</IRCDaemon>
+
+</Computer>

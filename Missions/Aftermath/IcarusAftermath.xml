@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="icarusAftermath" activeCheck="true" shouldIgnoreSenderVerification="false">
+
+<goals>
+<goal type="filedownload" target="asset4" file="RTSPCrack.exe" path="bin"/>
+<goal type="delay" time="5.0"/>
+</goals>
+
+<missionStart suppress="true">loadConditionalActions:Actions/AftermathAction.xml</missionStart>
+<nextMission IsSilent="false">Missions/Aftermath/AftermathNext.xml</nextMission>
+
+<email>
+<sender>L</sender>
+<subject>Aftermath</subject>
+<body>Hey.
+I'm assuming you're confused as to what happened. 
+Short answer is: ICaRUS destroyed Core and deleted all our port crushers, as well as refreshed our VMs.
+Don't worry though, I backed up the sequencers for ICaRUS in a secret location. Not even ICaRUS could find it. 
+I've sent the other two to get back their port crushers. I'll expect you to do the same. 
+I'll try to get Core back up and running. For the time being, though, reclaim those port crushers. You'll need them.
+
+-L</body>
+<attachments>
+<link comp="asset1"/>
+</attachments>
+
+</email>
+</mission>

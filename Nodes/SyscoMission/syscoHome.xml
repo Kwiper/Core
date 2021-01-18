@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="syscoHome"
+          name="Chuck Ribbons Laptop"
+          ip="144.12.155.2"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="2" >
+
+<adminPass pass="CantTouchThis" />
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1"/>
+<portsForCrack val="4"/>
+<firewall level="9"/>
+<trace time="150"/>
+
+<file path="home" name="work_plans.docx">#BINARY#</file>
+<file path="home" name="Server_Passwords.txt">Hub: Sysco-4471
+Mail: SyscoMail-2112
+IRC: SyscoIRC-2241
+Cache: Sysco-4481</file>
+
+</Computer>

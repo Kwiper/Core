@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopGateway"
+          name="F-Stop Gateway Node"
+          ip="255.75.102.42"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="VVkss9332l" />
+<ports>21, 6881, 443, 554, 25</ports>
+<portsForCrack val="5" />
+<firewall level="7"/>
+<trace time="80"/>
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<dlink target="fstopDesign"/>
+<dlink target="fstopOffice"/>
+<dlink target="fstopMail"/>
+
+</Computer>

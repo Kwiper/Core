@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="dantonComp"
+          name="Danton Enterprises"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Danton-Enterprises-4472" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="3" />
+<portsForCrack val="5"/>
+<trace time="150"/>
+
+</Computer>

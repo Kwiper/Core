@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopWhitelist2"
+          name="F-Stop Secondary Whitelist Server"
+          ip="229.411.21.5"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="FStopWhitelist2" />
+
+<ports>21, 22, 25, 80, 443, 554, 6881</ports>
+<proxy time="1" />
+<portsForCrack val="6" />
+<trace time="100"/>
+
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<WhitelistAuthenticatorDaemon SelfAuthenticating="false"/>
+
+</Computer>

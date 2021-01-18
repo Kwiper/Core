@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="asset3"
+          name="Asset Gauntlet 3"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Gauntlet3" />
+<ports>21, 22, 25, 80, 443, 1433, 6881</ports>
+<proxy time="1" />
+<portsForCrack val="5"/>
+<trace time="80"/>
+
+<dlink target="asset4" />
+
+<file path="bin" name="SQLBufferOverflow.exe">#SQL_CRACK#</file>
+<file path="bin" name="TorrentStreamInjector.exe">#TORRENT_EXE#</file>
+
+</Computer>

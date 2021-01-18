@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="asset4"
+          name="Asset Gauntlet 4"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Gauntlet4" />
+<ports>21, 22, 25, 80, 443, 1433, 6881, 554</ports>
+<proxy time="1" />
+<firewall level="8" solution="GAUNTLET"/>
+<portsForCrack val="7"/>
+<trace time="120"/>
+
+<file path="bin" name="RTSPCrack.exe">#RTSP_EXE#</file>
+
+</Computer>

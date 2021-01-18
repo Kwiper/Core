@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopWhitelist"
+          name="F-Stop Whitelist Server"
+          ip="238.12.15.51"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="f-stopWhitelist" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="5" />
+<portsForCrack val="5" />
+<trace time="80"/>
+
+
+<!--Whitelist that Cardinal and Hel take down-->
+<WhitelistAuthenticatorDaemon SelfAuthenticating="true" />
+
+</Computer>

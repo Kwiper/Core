@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="dcorpWhitelist"
+          name="D Corp Whitelist Server"
+          ip="205.14.25.12"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="DC0RP-238" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<portsForCrack val="4" />
+<firewall level="11"/>
+<trace time="100"/>
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<positionNear target="dcorpHub" position="1" total="3" extraDistance="0.1" force="false"/>
+
+<WhitelistAuthenticatorDaemon SelfAuthenticating="false" />
+
+</Computer>

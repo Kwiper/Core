@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="fstopMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+
+<goals>
+<goal type="fileupload" target="coreDrop" file="F-Stop_[CLASSIFIED].docx" path="home" destTarget="coreDrop" destPath="Drop/Uploads"/>
+</goals>
+
+<missionStart suppress="true">loadConditionalActions:Actions/FStopAction.xml</missionStart>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="F-Stop - #PLAYERNAME#">
+Investigate F-Stop Laboratories and report back with anything you can find that connects the previous targets with F-Stop</posting>
+
+<email>
+<sender>L</sender>
+<subject>F-Stop - #PLAYERNAME#</subject>
+<body>F-Stop is at the center of everything our previous targets have been doing. We have to find out what they actually are doing first before we make any rash decisions.
+Your mission is to investigate F-Stop Laboratories' network. Find out anything you can. Help each other if you need it. If you find anything worthwhile, upload it to the drop server.
+
+I'm counting on you guys
+-L</body>
+
+<attachments>
+<note title="Mission Details">Infiltrate F-Stop Laboratories
+Find anything relating to our previous targets 
+Upload that to the Drop Server.</note>
+
+<link comp="fstopHub"/>
+</attachments>
+</email>
+</mission>

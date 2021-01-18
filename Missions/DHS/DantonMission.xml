@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="dantonMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+<goals>
+<goal type="getstring" target="Danton-Enterprises-4472"/>
+</goals>
+
+<missionStart suppress="true">loadConditionalActions:Actions/DantonAction.xml</missionStart>
+<missionEnd>loadConditionalActions:Actions/EndActions/DantonEndAction.xml</missionEnd>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Danton Enterprises">
+One of the largest corporations in the world will play a huge part in our plans for the future. We need admin access to their system.</posting>
+
+<email>
+<sender>L</sender>
+<subject>Danton Enterprises</subject>
+<body>Danton Enterprises is at the forefront of cyber security. They have a part in something big that will happen in the future. 
+We need admin access to their company's server, as it will hold the key to our plans. Infiltrate their servers, find the admin pass and report back with the password.
+
+-L</body>
+
+<attachments>
+<link comp="dantonWeb"/>
+</attachments>
+</email>
+</mission>

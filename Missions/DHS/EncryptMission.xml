@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="encryptMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+
+<goals>
+<goal type="fileupload" target="coreDrop" file="Decypher.exe" path="bin" destTarget="coreDrop" destPath="Drop/Uploads"/>
+<goal type="fileupload" target="coreDrop" file="DECHead.exe" path="bin" destTarget="coreDrop" destPath="Drop/Uploads"/>
+</goals>
+
+<missionStart suppress="true">loadConditionalActions:Actions/EncryptAction.xml</missionStart>
+<missionEnd>loadConditionalActions:Actions/EndActions/EncryptEndAction.xml</missionEnd>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Encryption Incorporated">
+Encryption Inc. is a software company famous for making encryption software. They have some decryption tools for those encryptions we will need.</posting>
+
+<email>
+<sender>L</sender>
+<subject>Encryption Incorporated</subject>
+<body>Encryption Inc. is on the radar today.
+They are responsible for creating the world's best encryption software. Recently, they've developed a decryption suite that will be very useful in the future.
+Your mission is to infiltrate Encryption Inc. and steal the decryption softwares. Once you manage to get a copy of the suite, upload the programs to the drop server.
+
+-L</body>
+ <attachments>
+ <note title="Mission Details">Infiltrate Encryption Inc.
+Steal a copy of their decryption suite 
+Upload the programs to the drop server</note>
+<link comp="encryptHub" />
+</attachments>
+</email>
+</mission>

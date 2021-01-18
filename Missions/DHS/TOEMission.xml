@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="toeMission">
+<goals>
+</goals>
+
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Theory of Everything">
+A top-notch scientist is making the news nowadays. Other companies are trying to use his knowledge for themselves. Find out what he knows and report back.</posting>
+
+<email>
+<sender>L</sender>
+<subject>Theory of Everything</subject>
+<body>Heh, you aren't even supposed to see this</body>
+<attachments>
+</attachments>
+</email>
+</mission>

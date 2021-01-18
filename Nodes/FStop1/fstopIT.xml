@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopIT"
+          name="F-Stop IT Department"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+
+<adminPass pass="f-stop3914" />
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1" />
+<portsForCrack val="4" />
+<trace time="80" />
+
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="server_manage.txt">Company Server: 35.22.15.26
+Production Server: 29.25.12.4
+
+For any inquiries regarding server management, contact Leopold @24.12.52.141</file>
+
+</Computer>
+

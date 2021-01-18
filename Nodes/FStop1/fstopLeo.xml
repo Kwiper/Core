@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopLeo"
+          name="Leopold Home"
+          ip="24.12.52.141"
+          security="4"
+          allowsDefaultBootModule="false"
+          icon="DLCLaptop"
+          type="4" >
+
+<adminPass pass="tintin7" />
+
+<ports>21, 22, 25, 80, 443</ports>
+
+<portsForCrack val="4" />
+<firewall level="5" />
+<trace time="100"/>
+
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="irc_log.txt">(16:10) [Leo] I swear to god some of the people in this company have no idea what they're doing.
+(16:10) [Davin] What happened this time?
+(16:11) [Leo] Well, someone in the finance department asked me to fix her computer because it wouldn't turn on, yeah?
+(16:11) [Davin] Yeah...?
+(16:11) [Leo] Her computer was unplugged -.-
+(16:11) [Davin] Jesus</file>
+
+<encryptedFile path="bin" name="SSLTrojan.dec" extension=".exe" ip="192.168.1.1" header="SSLTrojan">
+#SSL_EXE#</encryptedFile>
+
+
+</Computer>

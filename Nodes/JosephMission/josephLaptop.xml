@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="josephLaptop"
+          name="Joseph W. Laptop"
+          ip="124.25.249.1"
+          security="3"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="2" >
+
+<adminPass pass="VVkas831" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1"/>
+<portsForCrack val="3" />
+<trace time="80" />
+
+<file path="home" name="IRC_Details.txt">Username: JosephW
+Pass: TR8ss12A</file>
+<file path="doggo.png">#BINARY#</file>
+<file path="cute_doggo.png">#BINARY#</file>
+
+</Computer>

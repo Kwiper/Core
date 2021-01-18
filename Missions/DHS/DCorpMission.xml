@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="dcorpMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+<goals>
+<goal type="filechange" target="dcorpWhitelist" file="list.txt" path="Whitelist" keyword="225.102.52.23"/>
+</goals>
+
+<missionStart suppress="true">playCustomSong:Music/HOME_-_Captain_Forever.ogg</missionStart>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Devil Corporation">
+We will need you to add our faction's IP to D Corp's (AKA Devil Corp) whitelist server.
+</posting>
+
+<email>
+<sender>L</sender>
+<subject>Devil Corporation</subject>
+<body>#PLAYERNAME#,
+We will need you to add our faction's IP to D Corp's, commonly known as Devil Corp, whitelist server. This is an imperative part of our operation. DO NOT DELETE THE WHITELIST.
+We want this to be as discreet as possible. The only way to do that is to add this DHS's IP to their whitelist. 
+The IP, in case you forget, is 225.102.52.23. There's no way for me to directly link you to D Corp's servers, so we'll have to make do with an employee.
+She frequents Jim Thorton's a lot, so maybe you'll find her there. Her name is Laura Nakamura.
+
+-L</body>
+<attachments>
+<note title="Mission Details">Find Laura Nakamura's computer in Jim Thorton's
+Find a way into D Corp through her computer
+Add 225.102.52.23 to the whitelist.
+DO NOT DELETE WHITELIST.</note>
+
+<link comp="jimThortonsRouter"/>
+</attachments>
+</email>
+</mission>

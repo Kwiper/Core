@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="playerComp" name="#PLAYERNAME# Workstation" type="empty">
+
+  <portsForCrack val="3" />
+  <ports>22, 21, 25</ports>
+  <trace time="-1" />
+
+<file path="bin" name="SSHCrack.exe">#SSH_CRACK#</file>
+<file path="bin" name="FTPBounce.exe">#FTP_CRACK#</file>
+<file path="bin" name="SMTPOverflow.exe">#SMTP_CRACK#</file>
+<file path="bin" name="Tracekill.exe">#TRACEKILL_EXE#</file>
+  
+</Computer>

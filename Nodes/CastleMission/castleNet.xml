@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="castleNet"
+          name="Franklin Castle Netbook"
+          security="3"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="2" >
+
+<adminPass pass="Punisher"/>
+
+<ports>21, 22, 25, 80, 554</ports>
+<portsForCrack val="3"/>
+<trace time="150"/>
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="Data_#0042.dat">#BINARY#</file>
+<file path="home" name="Data_#0054.dat">#BINARY#</file>
+<file path="home" name="Data_#0055.dat">#BINARY#</file>
+<file path="home" name="Data_#0061.dat">#BINARY#</file>
+<file path="home" name="Data_#0070.dat">#BINARY#</file>
+
+</Computer>
+

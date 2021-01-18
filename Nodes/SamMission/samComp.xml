@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="samComp"
+          name="Samuel Valeska Home"
+          security="3"
+          allowsDefaultBootModule="true"
+          type="2" >
+
+<adminPass pass="Vx9s8da" />
+
+<ports>21, 22, 80, 443</ports>
+<proxy time="1" />
+<portsForCrack val="3"/>
+<firewall level="7" solution="VX95BSD"/>
+<trace time="80" />
+
+<dlink target="samPC"/>
+
+<file path="home/Finished" name="Rivals.mp3">#BINARY#</file>
+<file path="home/Finished" name="Halcyon.mp3">#BINARY#</file>
+<file path="home/Finished" name="Final_Battle.mp3">#BINARY#</file>
+<file path="home/Finished" name="Intrinsic_Analysis.mp3">#BINARY#</file>
+
+<file path="home/Unfinished" name="track_05.flp">#BINARY#</file>
+<file path="home/Unfinished" name="track_06.flp">#BINARY#</file>
+<file path="home/Unfinished" name="track_07.flp">#BINARY#</file>
+
+<file path="home" name="Work_log.dat">#BINARY#</file>
+<file path="home" name="Work_schedule.xlsx">#BINARY#</file>
+
+<file path="sys" name="Yellow-Theme.sys">#YELLOW_THEME#</file>
+
+</Computer>

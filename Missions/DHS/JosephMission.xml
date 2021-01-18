@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="josephMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+
+<goals>
+<goal type="fileupload" target="coreDrop" file="Prj_ICaRUS.docx" path="home" destTarget="coreDrop" destPath="Drop/Uploads"/>
+</goals>
+
+<missionStart suppress="true">loadConditionalActions:Actions/JosephAction.xml</missionStart>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Ex-Employee - #PLAYERNAME#">
+There is an ex-employee of F-Stop who may have access to some valuable information concerning ICaRUS. Investigate this person.</posting>
+
+<email>
+<sender>L</sender>
+<subject>Ex-Employee - #PLAYERNAME#</subject>
+<body>We're getting closer to being able to stop F-Stop from completing ICaRUS. 
+You will work with Hel to investigate an ex-employee of F-Stop who may have some valuable information we desperately need.
+Find any files related to ICaRUS and upload them to the drop server. We're nearing the endgame here.
+
+I'm counting on you guys.
+-L</body>
+
+<attachments>
+<note title="Mission Details">Investigate an ex-employee of F-Stop 
+Find anything relating to ICaRUS
+Upload to the drop server</note>
+<link comp="josephComp"/>
+</attachments>
+</email>
+</mission>

@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="castleMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+<goals>
+<goal type="filedownload" target="castleNet" file="Data_#0042.dat" path="home"/>
+<goal type="fileupload" target="coreDrop" file="Data_#0042.dat" destTarget="coreDrop" destPath="Drop/Uploads"/>
+</goals>
+
+<missionStart suppress="true">playCustomSong:Music/Emil_Rottmayer_-_Descend.ogg</missionStart>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Castle Snatchers">
+A man named Franklin Castle has some data we require. Your mission is to steal it from him.</posting>
+
+<email>
+<sender>L</sender>
+<subject>Castle Snatchers</subject>
+<body>A man named Franklin Castle has some interesting data that will be useful for plans going forward. He has it somewhere on his system. Your mission is to infiltrate his computer and download that data. 
+Once you have downloaded it, upload it to the faction dropbox.
+The data should be listed as #0042.
+
+-L</body>
+
+<attachments>
+<note title="Mission Details">Hack into Franklin Castle's computer 
+Find the data listed as #0042
+Download it 
+Upload to drop server</note>
+<link comp="castleComp"/>
+</attachments>
+</email>
+</mission>

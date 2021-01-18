@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopOffice"
+          name="F-Stop Offices"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="F-StopOffice" />
+
+<ports>21, 22, 25, 80, 443, 554</ports>
+<portsForCrack val="5"/>
+<proxy time="1"/>
+<firewall level="5"/>
+<trace time="100"/>
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<dlink target="fstopCache"/>
+
+<file path="home" name="Office_Data.dat">#BINARY#</file>
+<file path="home" name="Employee_Data.dat">#BINARY#</file>
+<file path="home" name="Login_Data.dat">#BINARY#</file>
+
+<eosDevice name="CEO Phone" id="ceoPhone" icon="ePhone" empty="true" passOverride="FStop">
+<mail username="ceo@fstopmail.com" pass="fstopCEO2214"/>
+</eosDevice>
+
+<eosDevice name="J. Turner Tablet" id="employeeTab" icon="tablet" empty="true" passOverride="FStop">
+<note>Info
+This tablet belongs to James Turner, manager of servers at F-Stop</note>
+<file path="eos/Whitelist" name="WhitelistServer.txt">229.411.21.5</file>
+</eosDevice>
+
+<eosDevice name="Employee Phone" id="employeePhone" icon="ePhone" empty="true" passOverride="alpine">
+</eosDevice>
+
+<eosDevice name="Employee Phone 4S" id="employeePhone2" icon="ePhone2" empty="true" passOverride="alpine">
+</eosDevice>
+
+</Computer>

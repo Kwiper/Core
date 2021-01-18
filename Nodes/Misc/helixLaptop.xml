@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="helixLaptop"
+          name="H3l1x Laptop"
+          ip="536.12.53.2"
+          security="4"
+          allowsDefaultBootmodule="true"
+          icon="laptop"
+          type="4" >
+
+<adminPass pass="H3l1x"/>
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1" />
+<portsForCrack val="4" />
+<firewall level="8"/>
+<trace time="80"/>
+
+<file path="bin" name="Clock.exe">#CLOCK_PROGRAM#</file>
+<file path="bin" name="ComShell.exe">#SHELL_CONTROLLER_EXE#</file>
+
+<customthemefile path="sys" name="Helix_x-server.sys" themePath="Themes/Helix_x-server.xml"/>
+
+</Computer>

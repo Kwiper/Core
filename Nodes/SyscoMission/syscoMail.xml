@@ -1,0 +1,46 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="syscoMail"
+          name="Sysco Mail Server"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="SyscoMail-2112" />
+
+<account username="ChuckRibbons" password="SyscoCEO" type="MAIL" />
+
+<ports>21, 22, 25, 80, 443, 1433</ports>
+<proxy time="2" />
+<portsForCrack val="5" />
+<firewall level="9"/>
+<trace time="100"/>
+
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<mailServer name="Sysco" color="10,150,221" generateJunk="true">
+    <email recipient="ChuckRibbons" sender="TimRob" subject="Company Investigation">
+Dear Mr. Ribbons,
+I am writing on behalf of the CSA. We believe you are using your company, Sysco, in order to create illicit programs used for accessing people's networks.
+This e-mail is to notify you that a representative of the CSA will be in touch with you shortly in order to investigate your company.
+Make sure there are no illegal programs lying around.
+Regards,
+Tim Rob, Communications at the CSA</email>
+    <email recipient="ChuckRibbons" sender="MatElliot" subject="IRC">
+Dear Mr. Chuck Ribbons,
+I am honoured to have been promoted to Head of Design after you fired the previous head. 
+However, I find it odd that I have not been invited into the head of staff IRC channel yet. I feel that would be important in order for me to fulfill my duties as Head.
+Thank you again,
+-Mat Elliot, Head of Design.
+===========================================
+Dear Mat Elliot,
+Of course you will be invited into the head of staff IRC channel. That was simply a mistake on my part, and I deeply apologise for not giving you access to it earlier.
+
+Link: 241.152.42.12
+Username: Mat 
+Password: Sysco-Head221
+
+Congratulations,
+-Chuck Ribbons, CEO of Sysco</email>
+</mailServer>
+
+</Computer>

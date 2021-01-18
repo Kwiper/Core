@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="cardinalAsset">
+<goals>
+</goals>
+
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Acquire Resources">
+Find some more assets to help us stop ICaRUS</posting>
+
+<email>
+<sender>L</sender>
+<subject>Theory of Everything</subject>
+<body>Heh, you aren't even supposed to see this</body>
+<attachments>
+</attachments>
+</email>
+</mission>

@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="sequencerMission" activeCheck="true" shouldIgnoreSenderVerification="false">
+<goals>
+<goal type="clearfolder" target="icarusCore" path="Core"/>
+</goals>
+
+<missionEnd>loadConditionalActions:Actions/SequenceSuccess.xml</missionEnd>
+<nextMission IsSilent="true">NONE</nextMission>
+
+<email>
+<sender>L</sender>
+<subject>NONE</subject>
+<body>Shouldn't see this boi</body>
+<attachments>
+</attachments>
+</email>
+</mission>

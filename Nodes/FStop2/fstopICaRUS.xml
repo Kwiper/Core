@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopICaRUS"
+          name="ICaRUS Development Center"
+          ip="22.15.293.240"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCPC2"
+          type="4" >
+
+<adminPass pass="ICaRUSCentral"/>
+
+<ports>21, 22, 25, 80, 6881, 443, 554</ports>
+<portsForCrack val="7"/>
+<firewall level="8"/>
+<trace time="120"/>
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<file path="ICaRUS" name="ICaRUS_Sequencers.rar">#BINARY#</file>
+<file path="ICaRUS" name="ICaRUS_Sequencers_Info.txt">This package contains all the sequencers necessary to connect to the ICaRUS Intranet.</file>
+
+</Computer>

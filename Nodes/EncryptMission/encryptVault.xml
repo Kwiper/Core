@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="encryptVault"
+          name="Encryption Inc. Vault Server"
+          ip="28.102.42.54"
+          security="4" 
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Vc8s6DAk" />
+<account username="Nanderson" password="Vc8s6DAk" type="ADMIN"/>
+<ports>21, 22, 25, 1433</ports>
+<portsForCrack val="4" />
+<admin type="progress" resetPassword="false" isSuper="false" />
+
+<dlink target="encryptHub"/>
+
+<file path="bin/DecypherSuite" name="Decypher.exe">#DECYPHER_PROGRAM#</file>
+<file path="bin/DecypherSuite" name="DECHead.exe">#DECHEAD_PROGRAM#</file>
+<file path="bin/DecypherSuite" name="Decypher_Suite.txt">The Decypher Suite, consisting of Decypher and DECHead, are two programs meant to run on Encryption Inc.'s famous encryption software.
+Decypher will decrypt all encrypted files, and DECHead will scan those files, showing you that file's basic information.
+
+Usage: Decypher [file].dec [password]
+       DECHead [file].dec</file>
+
+</Computer>

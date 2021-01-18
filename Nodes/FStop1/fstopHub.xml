@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopHub"
+          name="F-Stop Laboratories"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="f-stop3881" />
+
+<ports>21, 22, 25, 80, 1433</ports>
+<proxy time="2" />
+<portsForCrack val="4" />
+<trace time="150" />
+
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<dlink target="fstopComp"/>
+
+<LogoDaemon Name="F-Stop Laboratories" ShowsTitle="false" TextColor="255, 255, 255, 255" LogoImagePath="Sprites/f_stopDaemon.png">
+</LogoDaemon>
+
+</Computer>

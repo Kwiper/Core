@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="jimThortonsRouter"
+          name="Jim Thorton's Router"
+          security="4"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="JimThorton2912" />
+
+<ports>21, 22, 25, 80, 443</ports>
+
+<proxy time="1" />
+<portsForCrack val="4" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+ <file path="home" name="stats.txt">Sysco_2951
+current_connections=8
+daily_connections=16
+weekly_connections=129
+all_time_connections=28049</file>
+  
+<file path="home" name="connections.txt">
+Matthew's ePhone 3 (24.12.63.15)
+John Smith Laptop (#RANDOM_IP#)
+Quincy ePad Pro (93.513.3.2)
+H3l1x Laptop (536.12.53.2)
+Jason eBook (34.391.23.3)
+Unknown Computer (14.2.42.2)
+John Stalvern's ePhone (192.42.25.12)
+Laura Nakamura Laptop (36.51.204.2)</file>
+
+</Computer>

@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopMail"
+          name="F-Stop Mail Server"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+
+<adminPass pass="FStopMailServer"/>
+
+<account username="ceo" password="fstopCEO2214" type="MAIL" />
+
+<ports>21, 22, 25, 80, 1433</ports>
+<proxy time="1"/>
+<portsForCrack val="6"/>
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<WhitelistAuthenticatorDaemon Remote="fstopWhitelist2"/>
+
+<mailServer name="F-Stop" color="150,150,150" generateJunk="true">
+<email recipient="ceo" sender="design@fstopmail.com" subject="[CLASSIFIED]">
+Sir, 
+The password to the blueprints for the project is linked below: 
+
+ICaRUSBlueprints
+
+-Head of Design</email>
+</mailServer>
+
+</Computer>
+

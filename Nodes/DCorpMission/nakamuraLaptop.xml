@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="nakamuraLaptop"
+          name="Laura Nakamura Laptop"
+          ip="36.51.204.2"
+          security="3"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="2" >
+
+<adminPass pass="Nekomura" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<portsForCrack val="3" />
+<firewall level="3" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="email_log.txt">On 24 May, 201X, Z3r0 wrote,
+
+Hey, Laura.
+Don't worry about your Geology degree. One of my agents took care of it.
+Are you sure you don't want to help me with the project? Your talents would be invaluable.
+
+Please think about it.
+-Z3r0
+=================================
+On 25 May, 201X, Nakamura wrote,
+
+Hey, thanks.
+I can't join your little project, and you KNOW why. I'm too tied up with work at the moment.
+
+-Laura
+=================================
+On 26 May, 201X, Z3r0 wrote,
+
+Work, work, work. Just like high school, haha</file>
+
+<encryptedFile path="home" name="company_ips.dec" extension=".txt" ip="205.12.52.3" header="D Corp IPs" pass="hayoullnevergetintothis">
+#BINARY#</encryptedFile>
+
+</Computer>

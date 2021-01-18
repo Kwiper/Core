@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopProduct"
+          name="F-Stop Production Server"
+          ip="29.25.12.4"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="f-stop5572" />
+<ports>21, 22, 25, 80, 443</ports>
+<portsForCrack val="5"/>
+<firewall level="11"/>
+<trace time="100"/>
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<file path="Products" name="F-Stop_#4492.docx">#4492 - Repulsion Paint
+Project goal: To create a coating that will bounce any and all substances that touch it
+
+Project notes: Too bouncy to handle</file>
+
+<file path="Products" name="F-Stop_#4521.docx">#4521 - Break-fall Pantaloons
+Project goal: To create an article of clothing that will break any fall from a distance of up to 5 metres
+
+Project notes: Too old-fashioned. May want to invest in designing Break-fall Pants</file>
+
+<file path="Products" name="F-Stop_#4582.docx">#4582 - Trans-spatial Quantum Wormhole Apparatus
+Project goal: Basically a device that makes wormholes to travel from one place to another
+
+Project notes: This thing will destroy the world. Best not to produce it.</file>
+
+<encryptedFile path="Products" name="F-Stop_[CLASSIFIED].dec" extension=".docx" ip="192.168.1.1" header="[CLASSIFIED]">
+[CLASSIFIED] - ICaRUS (Intelligent Computing and Rootkit Upload System)
+Project goal: Artificial Intelligence
+
+Project notes: Nearing completion.
+
+Collaborators: Franklin Castle - Design
+               Sam Valeska - Audio Design 
+               Danton Enterprises - Programming and Design 
+               D Corp - Finance</encryptedFile>
+
+<WhitelistAuthenticatorDaemon Remote="fstopWhitelist"/>
+
+</Computer>

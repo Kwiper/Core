@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="samMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+
+<goals>
+<goal type="fileupload" target="samComp" file="rootwyrm.jar" path="home" destTarget="samComp" destPath="sys"/>
+<goal type="fileupload" target="samPC" file="rootwyrm.jar" path="home" destTarget="samPC" destPath="sys"/>
+</goals>
+
+<missionStart suppress="true">loadConditionalActions:Actions/SamAction.xml</missionStart>
+<missionEnd>loadConditionalActions:Actions/EndActions/SamEndAction.xml</missionEnd>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Malware Injection">
+Upload a tracking virus onto someone's computers.</posting>
+
+<email>
+<sender>L</sender>
+<subject>Malware Injection</subject>
+<body>Agent, in order for our plans to succeed in the grand scheme of things, there is a certain individual we will need to track the movements of.
+His name is Sam Valeska. By day, he's a music artist. By night, he's part of something greater, based on my investigations.
+In the drop server, I have uploaded a little virus I've been working on called rootwyrm. It will allow us to track Sam Valeska's activities.
+Download the virus and upload it to the /sys folder on any of Sam's computers you find.
+
+-L</body>
+<attachments>
+<note title="Mission Details">Download rootwyrm 
+Connect to Sam Valeska's computer 
+Upload the virus to the /sys folder on all computers you may find in his system</note>
+<link comp="samComp"/>
+</attachments>
+</email>
+</mission>

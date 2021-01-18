@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopCache"
+          name="F-Stop Cache Server"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="FStopCache"/>
+
+<ports>21, 6881, 25, 80, 443</ports>
+<proxy time="2" />
+<portsForCrack val="5"/>
+<trace time="100"/>
+
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<file path="bin" name="FStopDeviceScan.exe">#EOS_SCANNER_EXE#</file>
+<file path="bin" name="FStopDeviceScan_Info.txt">FStopDeviceScan is a program designed by F-Stop to scan for any mobile device connected in the F-Stop network. 
+This includes employee phones and tablets provided by F-Stop Laboratories.
+Default admin override is FStop</file>
+
+</Computer>

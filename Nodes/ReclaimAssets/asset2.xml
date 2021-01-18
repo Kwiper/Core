@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="asset2"
+          name="Asset Gauntlet 2"
+          security="3"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Gauntlet2" />
+<ports>21, 22, 25, 80, 443</ports>
+
+<portsForCrack val="3"/>
+<trace time="60"/>
+
+<dlink target="asset3"/>
+
+<file path="bin" name="WebServerWorm.exe">#WEB_CRACK#</file>
+<file path="bin" name="SSLTrojan.exe">#SSL_EXE#</file>
+
+</Computer>

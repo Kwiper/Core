@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="josephTab"
+          name="Joseph W. Tablet"
+          security="3"
+          allowsDefaultBootModule="true"
+          icon="tablet"
+          type="4" >
+
+<adminPass pass="alpine"/>
+
+<ports>21, 22, 25, 80, 6881</ports>
+
+<portsForCrack val="3" />
+
+<encryptedFile path="home" name="IRC_Log.dec" extension=".txt" ip="201.412.5.24" header="IRC Log" pass="VVss821">
+#BINARY#</encryptedFile>
+
+</Computer>
+

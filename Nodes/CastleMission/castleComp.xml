@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="castleComp"
+          name="Franklin Castle PC"
+          security="2"
+          allowsDefaultBootModule="true"
+          type="2" >
+
+<adminPass pass="Punishment" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<portsForCrack val="2" />
+<firewall level="6"/>
+
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<dlink target="castleNet"/>
+
+<file path="home" name="staff_memo.docx">#BINARY#</file>
+<file path="home" name="work_schedule.xlsx">#BINARY#</file>
+
+<file path="sys" name="Green-Theme.sys">#GREEN_THEME#</file>
+
+</Computer>

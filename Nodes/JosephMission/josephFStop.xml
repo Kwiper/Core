@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="josephFStop"
+          name="F-Stop Design Cache"
+          ip="111.53.41.2"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="F-Stop2914" />
+
+<ports>21, 22, 25, 80, 443, 6881</ports>
+<proxy time="3" />
+<portsForCrack val="6"/>
+<firewall level="7"/>
+<trace time="100" />
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<encryptedFile path="home" name="Prj_ICaRUS.dec" extension=".docx" ip="43.102.50.35" header="Project: ICaRUS" pass="DAEDALUS">
+#BINARY#</encryptedFile>
+
+</Computer>

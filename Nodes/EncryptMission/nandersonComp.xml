@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="nandersonComp"
+          name="Thomas Nanderson Home"
+          ip="123.542.24.1"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="4" >
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="2" />
+<portsForCrack val="4" />
+<trace time="150" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="Vault_Details.txt">Username: Nanderson 
+Password: Vc8s6DAk</file>
+
+<file path="sys" name="LE-Theme.sys">#PURPLE_THEME#</file>
+
+</Computer>

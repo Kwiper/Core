@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="syscoMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+<goals>
+<goal type="fileupload" target="coreDrop" file="TorrentStreamInjector.exe" path="bin" destTarget="coreDrop" destPath="Drop/Uploads"/>
+</goals>
+
+<missionStart val="9" suppress="true">changeSong</missionStart>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<posting title="Acquire Resources">
+Network conglomerate Sysco has a resource we will need to take down ICaRUS</posting>
+
+<email>
+<sender>L</sender>
+<subject>Acquire Resources</subject>
+<body>With the aftermath of that attack, it is imperative that we stop F-Stop and ICaRUS once and for all.
+To do that, we will need some resources. Now, a contact of mine at the CSA has told me that Sysco is under investigation for developing illicit port crushers.
+It is your job to break in to Sysco and snag a copy of any port crushers we don't have yet. Upload it to the drop server once you get it.
+
+-L</body>
+
+<attachments>
+<note title="Mission Details">Break into Sysco 
+Find where they keep their port crushers 
+Steal a copy of any we don't have
+Upload to drop server</note>
+<link comp="syscoHub"/>
+</attachments>
+</email>
+</mission>

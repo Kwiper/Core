@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="icarusCore3"
+          name="ICaRUS Core 3"
+          ip="18.15.235.1"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="ICARUSCORE" />
+
+<ports>21, 22, 25, 80, 1433, 6881, 443, 554</ports>
+<proxy time="1" />
+<portsForCrack val="8" />
+<firewall level="6" solution="ICARUS"/>
+<trace time="100" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="Core" name="core.runtime.dll">#BINARYSMALL#</file>
+<file path="Core" name="ICaRUS_Link.dll">#BINARYSMALL#</file>
+<file path="Core" name="ICaRUS_Backup.exe">#BINARYSMALL#</file>
+
+</Computer>

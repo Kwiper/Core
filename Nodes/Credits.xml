@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="credits"
+          name="Credits Server"
+          ip="167.194.132.7"
+          security="1"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Credits" />
+<ports>21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554</ports>
+<portsForCrack val="0"/>
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="CreditsData.txt">
+%--- CORE ---
+
+^Created by
+Kwiper
+
+^Story by 
+Kwiper 
+
+^Music:
+
+^Waterflame
+Thunderzone V2
+Relentless
+
+https://www.youtube.com/waterflame89
+
+^HOME 
+Captain Forever
+Dusk
+Hold
+If I'm Wrong
+
+https://soundcloud.com/home-2001
+https://www.facebook.com/homemusicofficial
+
+^Emil Rottmayer
+Descend
+
+https://soundcloud.com/emil-rottmayer
+https://twitter.com/imamouseville?lang=en
+
+^DesoloZ
+Super Paper Mario - The Ultimate Show (Remix)
+
+https://www.youtube.com/watch?v=XkngtuMD4_I
+http://www.newgrounds.com/audio/listen/505598
+
+^Hacknet OST
+Cinematrix - Revolve (R Mix)
+Remi Gallego (The Algorithm) - Malware Injection
+Remi Gallego (The Algorithm) - Payload (AKA Userspacelike)
+Remi Gallego (The Algorithm) - Panic Track
+Tonspender - Broken Boy
+
+^x-servers
+Helix - http://palandros.deviantart.com/art/Double-Helix-81840196
+FStop - Kwiper
+
+^Special Thanks
+Matt Trobbiani - Creator of Hacknet
+
+
+%#HackerJAM
+
+%THANKS FOR PLAYING</file>
+
+<CreditsDaemon Title="End Credits" ButtonText="End" ConditionalActionSetToRunOnButtonPressPath="Actions/CreditsAction.xml"/>
+
+</Computer>

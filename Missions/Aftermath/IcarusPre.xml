@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="icarusPre" activeCheck="true" shouldIgnoreSenderVerification="false">
+
+<goals>
+
+<goal type="delay" time="138.0"/>
+
+</goals>
+
+<nextMission IsSilent="true">Missions/Aftermath/IcarusAftermath.xml</nextMission>
+
+<email>
+<sender>L</sender>
+<subject>NONE</subject>
+<body>Oi, not supposed to see this.</body>
+<attachments>
+</attachments>
+</email>
+</mission>

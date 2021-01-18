@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="fstopMission2Next" activeCheck="true" shouldIgnoreSenderVerification="false">
+<goals>
+<goal type="fileupload" target="coreDrop" file="ICaRUS_Sequencers.rar" path="home" destTarget="coreDrop" destPath="Drop/Uploads"/>
+</goals>
+
+<missionStart suppress="true">playCustomSong:Music/Waterflame_-_Relentless.ogg</missionStart>
+<missionEnd val="1">addRankSilent</missionEnd>
+<nextMission IsSilent="true">NONE</nextMission>
+
+<email>
+<sender>L</sender>
+<subject>NONE</subject>
+<body>ain't supposed to see this</body>
+<attachments>
+</attachments>
+</email>
+</mission>

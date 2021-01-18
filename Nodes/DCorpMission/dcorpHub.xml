@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="dcorpHub"
+          name="D Corp Hub Server"
+          ip="205.12.52.3"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="DLCServer"
+          type="4" >
+
+<adminPass pass="DC0RP" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="2" />
+<portsForCrack val="4" />
+<firewall level="6"/>
+<trace time="150"/>
+
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<encryptedFile path="home" name="Company_Ips.dec" ip="192.168.1.1" header="Company IPs">
+Hub Server: 205.12.52.3
+Web Server: 19.24.253.1
+Company Server: 192.52.219.2
+Whitelist Server: 205.14.25.12
+
+For inquiries, contact Laura Nakamura, head of IT.</encryptedFile>
+
+</Computer>

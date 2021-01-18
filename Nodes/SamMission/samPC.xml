@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="samPC"
+          name="Samuel Valeska PC"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="2" >
+
+<adminPass pass="BXsj1023" />
+
+<ports>21, 22, 80, 25, 443</ports>
+<proxy time="1" />
+<portsForCrack val="4"/>
+<trace time="80" />
+
+<file path="home" name="requests.xlsx">#BINARY#</file>
+<file path="home" name="work.txt">#BINARY#</file>
+
+</Computer>

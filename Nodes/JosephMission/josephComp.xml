@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="josephComp"
+          name="Joseph W. Home"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="Aa922Ja2z" />
+<ports>21, 25, 80, 443, 6881</ports>
+
+<portsForCrack val="5" />
+<trace time="80"/>
+
+<dlink target="josephTab"/>
+
+<file path="home" name="work.docx">#BINARY#</file>
+
+<file path="sys" name="sync_log.dat">@5_Sync_with_22.155.231.2</file>
+
+<file path="sys" name="Base-Theme.sys">#BASE_THEME#</file>
+
+</Computer>

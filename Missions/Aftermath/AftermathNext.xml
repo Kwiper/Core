@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<mission id="aftermathNext" activeCheck="true" shouldIgnoreSenderVerification="false">
+
+<goals>
+</goals>
+
+<missionStart suppress="true">loadConditionalActions:Actions/SequenceAction.xml</missionStart>
+<nextMission IsSilent="false">NONE</nextMission>
+
+<email>
+<sender>L</sender>
+<subject>It's Time</subject>
+<body>Hey.
+I hope you've gotten all the assets. It's time for the endgame.
+I've gotten the DHS up and running again. I'll explain more there.
+
+-L</body>
+
+<attachments>
+<link comp="coreDHS"/>
+</attachments>
+</email>
+</mission>

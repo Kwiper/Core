@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopDesign"
+          name="F-Stop Design Hub"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="F-StopDesign" />
+<ports>21, 443, 25, 80, 6881, 554</ports>
+<proxy time="1"/>
+<portsForCrack val="6"/>
+<trace time="100"/>
+
+<admin type="progress"/>
+
+<file path="home" name="Blueprints.dat">#BINARY#</file>
+<encryptedFile path="home" name="[CLASSIFIED].dec" extension=".dat" ip="192.168.1.1" header="[CLASSIFIED]" pass="ICaRUSBlueprints">
+ICaRUS - 
+
+Specifications: #BINARYSMALL#
+
+Core Link: 22.15.293.240</encryptedFile>
+
+</Computer>

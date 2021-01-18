@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopComp"
+          name="F-Stop Laboratories Company Server"
+          ip="35.22.15.26"
+          security="4"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="f-stop3821" />
+
+<ports>21, 22, 25, 80</ports>
+<proxy time="3" />
+<portsForCrack val="4" />
+<firewall level="8" />
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<dlink target="fstopIT" />
+<positionNear target="fstopIT" position="1" total="3" extraDistance="0.1" force="false"/>
+
+<file path="home" name="CEO_Office.txt">CEO's Office: 29.41.512.42</file>
+
+</Computer>

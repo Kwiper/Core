@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fstopCEO"
+          name="F-Stop CEO Laptop"
+          ip="29.41.512.42"
+          security="5"
+          allowsDefaultBootModule="true"
+          icon="laptop"
+          type="4" >
+
+<adminPass pass="f-stopCEO" />
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1" />
+<portsForCrack val="5" />
+<trace time="100" />
+<admin type="fast" resetPassword="false" isSuper="false"/>
+
+<file path="home" name="Important_IPs.txt">Whitelist: 238.12.15.51
+Company Server: 35.22.15.26
+Production Server: 29.25.12.4</file>
+<file path="home" name="employee_logs.xlsx">#BINARY#</file>
+<file path="home" name="schedule.docx">#BINARY#</file>
+
+<customthemefile path="sys" name="FStop_x-server.sys" themePath="Themes/FStop_x-server.xml"/>
+
+</Computer>

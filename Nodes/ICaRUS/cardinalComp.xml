@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="cardinalComp"
+          name="Cardinal Battlestation"
+          ip="105.252.12.52"
+          security="4"
+          allowsDefaultBootModule="true"
+          icon="DLCPC1"
+          type="4" >
+
+<adminPass pass="cardinalsarecool" />
+
+<ports>21, 22, 25, 80</ports>
+<proxy time="1"/>
+<portsForCrack val="3"/>
+<admin type="progress" resetPassword="false" isSuper="false"/>
+
+<file path="log" name="@19_Connection:_from_18.15.235.1">@19 Connection: from 18.15.235.1</file>
+
+<file path="bin" name="SSHCrack.exe">#SSH_CRACK#</file>
+<file path="bin" name="WebServerWorm.exe">#WEB_CRACK#</file>
+<file path="bin" name="SMTPOverflow.exe">#SMTP_CRACK#</file>
+<file path="bin" name="SQLBufferOverflow.exe">#SQL_CRACK#</file>
+<file path="bin" name="Decypher.exe">#DECYPHER_PROGRAM#</file>
+<file path="bin" name="DECHead.exe">#DECHEAD_PROGRAM#</file>
+<file path="bin" name="Tracekill.exe">#TRACEKILL_EXE#</file>
+<file path="bin" name="TorrentStreamInjector.exe">#TORRENT_EXE#</file>
+<file path="bin" name="SSLTrojan.exe">#SSL_EXE#</file>
+<file path="bin" name="FTPSprint.exe">#FTP_FAST_EXE#</file>
+
+</Computer>
+

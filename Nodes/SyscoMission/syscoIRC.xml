@@ -1,0 +1,56 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="syscoIRC"
+          name="Sysco IRC Channel"
+          ip="241.152.42.12"
+          security="5"
+          allowsDefaultBootModule="true"
+          type="4" >
+
+<adminPass pass="SyscoIRC-2241" />
+
+<account username="Mat" password="Sysco-Head221" type="ALL"/>
+
+<ports>21, 22, 25, 80, 443</ports>
+<proxy time="1" />
+<portsForCrack val="5"/>
+<firewall level="7"/>
+<trace time="100"/>
+
+<file path="home" name="User_IPs.txt">Chuck: 144.12.155.2
+Stef: #RANDOM_IP#
+Ingrid: #RANDOM_IP#
+Beth: #RANDOM_IP#
+Mat: #RANDOM_IP#</file>
+
+<IRCDaemon themeColor="10,150,221" name="Sysco IRC Channel" needsLogin="true">
+<user name="Chuck" color="178.178.178"/>
+<user name="Stef" color="255,255,0"/>
+<user name="Ingrid" color="125,25,190"/>
+<user name="Beth" color="150,20,20"/>
+<user name="Mat" color="20,244,150"/>
+
+<post user="Chuck">Welcome our newest head of staff, Mat!</post>
+<post user="Stef">Hey, congrats!</post>
+<post user="Ingrid">Welcome!</post>
+<post user="Mat">Thanks, guys :P</post>
+<post user="Chuck">Anyways.</post>
+<post user="Chuck">We've got a huge problem</post>
+<post user="Chuck">I recieved an email from the CSA</post>
+<post user="Beth">Oh no...</post>
+<post user="Beth">They're onto us</post>
+<post user="Mat">Wait what?</post>
+<post user="Ingrid">Oh, right, you don't know</post>
+<post user="Stef">You see, we've been developing port crushers to access people's networks in secret</post>
+<post user="Mat">Hang on...</post>
+<post user="Mat">You're making programs to hack into peoples' systems?!</post>
+<post user="Chuck">Err... maybe</post>
+<post user="Mat">Screw this, I should've taken that job at Horizon</post>
+<post user="Mat">I resign</post>
+<post user="Chuck">...</post>
+<post user="Beth">He was only on the job for 10 minutes, huh?</post>
+<post user="Chuck">Well, guess we'll have to find a new Head of Design now.</post>
+<post user="Stef">Now that he's out, guess we'll have to ban him from this channel</post>
+<post user="Chuck">Eh, I'll do it later.</post>
+</IRCDaemon>
+
+</Computer>  
